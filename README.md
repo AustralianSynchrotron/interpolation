@@ -1,13 +1,15 @@
 # interpolation
 EPICS Multi-dimensional Interpolation
 
-##Description
+## Description
 Interpolation calculation sub-routine, for use with the aSubRecord.
 Enables the record to perform 1-D, 2-D .. 8-D table interpolation.
 
 INPA: long - number of dimensions (0 .. 8). 0 works but is a degenerate case.
-INPB: long - first/last interpolation item (D = 4, E = 5, ... J = 10,  ... U = 21)
-              Encoded as 100*First + Last
+
+INPB: long - first/last interpolation item (D = 4, E = 5, ... J = 10,  ... U = 21)</br>
+             Encoded as 100*First + Last
+             
 INPC: long - spare.
 
 OUTA: long - indicates if any coordinate out side of region of interest.
@@ -67,23 +69,23 @@ where
 
   1-D 5-tuple array requires 7 waveform elements.
 
-  +--------+--------+--------+--------+--------+--------+--------+
+  |   0    |  1     |    2   |    3   |    4   |   5    |    6   |
+  |--------|--------|--------|--------|--------|--------|--------|
   |  1.0   |  5.0   |  a[1]  |  a[2]  |  a[3]  |  a[4]  |  a[5]  |
-  +--------+--------+--------+--------+--------+--------+--------+
 
 
   2-D [3x2] array requires 9 waveform elements.
 
-  +--------+--------+--------+--------+--------+--------+--------+--------+--------+
+  |   0    |  1     |    2   |    3   |    4   |   5    |    6   |    7   |    8   |
+  |--------|--------|--------|--------|--------|--------|--------|--------|--------|
   |  2.0   |  3.0   |  2.0   | a[1,1] | a[1,2] | a[2,1] | a[2,2] | a[3,1] | a[3,2] |
-  +--------+--------+--------+--------+--------+--------+--------+--------+--------+
 
 
 Degenerate (0-D) scaler.
 
-  +--------+--------+
+  |   0    |  1     |
+  |--------|--------|
   |  0.0   |    a   |
-  +--------+--------+
 
 The number of dimensions and dimension size meta data in the first 1 + n
 waveform elements are still held double variables, but must contain whole
