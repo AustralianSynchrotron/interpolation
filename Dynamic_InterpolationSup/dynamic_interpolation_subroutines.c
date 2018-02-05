@@ -1,8 +1,29 @@
 /* $File: //ASP/Dev/SBS/4_Controls/4_4_Equipment_Control/Common/sw/Interpolation/Dynamic_InterpolationSup/dynamic_interpolation_subroutines.c $
- * $Revision: #3 $
- * $DateTime: 2012/06/07 10:13:13 $
+ * $Revision: #4 $
+ * $DateTime: 2018/02/05 20:50:27 $
  * Last checked in by: $Author: starritt $
  *
+ * Copyright (c) 2012,2018  Australian Synchrotron
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * Licence as published by the Free Software Foundation; either
+ * version 3 of the Licence, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public Licence for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * Licence along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ *
+ * Contact details:
+ * andrew.starritt@synchrotron.org.au
+ * 800 Blackburn Road, Clayton, Victoria 3168, Australia.
+ *
+ * 
  * Description
  * Interpolation calculation sub-routine, for use with the aSubRecord.
  * Enables the record to perform 1-D, 2-D .. 8-D table interpolation.
@@ -96,26 +117,6 @@
  *
  * Source code formatting:
  * indent -kr -pcs -i3 -cli3 -nbbo -nut  dynamic_interpolation_subroutines.c
- *
- * Copyright (c) 2012  Australian Synchrotron
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * Licence as published by the Free Software Foundation; either
- * version 2.1 of the Licence, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public Licence for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * Licence along with this library; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- * Contact details:
- * andrew.starritt@synchrotron.org.au
- * 800 Blackburn Road, Clayton, Victoria 3168, Australia.
  *
  */
 
@@ -219,7 +220,7 @@ static long Dynamic_Interpolation_Init (aSubRecord * prec)
            "INPA number of dimensions (%d) too big", ndims);
 
    temp = *((epicsInt32 *) prec->b);
-   /* Decode 
+   /* Decode
     */
    first = temp / 100;
    last = temp % 100;

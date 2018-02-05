@@ -1,17 +1,14 @@
 /* $File: //ASP/Dev/SBS/4_Controls/4_4_Equipment_Control/Common/sw/Interpolation/Dynamic_InterpolationSup/dynamic_interpolation.h $
- * $Revision: #2 $
- * $DateTime: 2012/06/07 10:13:13 $
+ * $Revision: #3 $
+ * $DateTime: 2018/02/05 20:50:27 $
  * Last checked in by: $Author: starritt $
  *
- * Source code formatting:
- * indent -kr -pcs -i3 -cli3 -nbbo -nut  dynamic_interpolation.c
- *
- * Copyright (c) 2012  Australian Synchrotron
+ * Copyright (c) 2012,2018  Australian Synchrotron
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * Licence as published by the Free Software Foundation; either
- * version 2.1 of the Licence, or (at your option) any later version.
+ * version 3 of the Licence, or (at your option) any later version.
  *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -23,8 +20,12 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
  *
  * Contact details:
- * andrew.starritt@synchrotron.vic.gov.au
+ * andrew.starritt@synchrotron.org.au
  * 800 Blackburn Road, Clayton, Victoria 3168, Australia.
+ *
+ *
+ * Source code formatting:
+ * indent -kr -pcs -i3 -cli3 -nbbo -nut  dynamic_interpolation.c
  */
 
 #ifndef _DYNAMIC_INTERPOLATION_H
