@@ -55,12 +55,15 @@ The detials are described below.
 
 ### Static fields
 
+
 | field | type   | description         |
 |-------|--------|---------------------|
+| INAM  | STRING | Set to Dynamic_Interpolation_Init   |
+| SNAM  | STRING | Set to Dynamic_Interpolation_Process  |
 | INPA  | LONG   | Number of dimensions (1 .. 8).<br>0 sort of works but is a degenerate case.  |
 | INPB  | LONG   | First/Last interpolation item (D = 4, E = 5, ... J = 10,  ... U = 21).<br>Encoded as 100*First + Last |
 | INPC  |        | Not used/spare  |
-| OUTA  | long   | Indicates if any coordinate out side of region of interest. |
+| OUTA  | LONG   | Indicates if any coordinate out side of region of interest. |
 
 If an input value is outside of the range of values defined in the corresponding
 input coordinate set, the output value is constrained to the boundary values
@@ -281,5 +284,5 @@ between one of two 1-D interpolations.
 
 The input coordinate sets and interpolation table waveforms are autosaved.
 
-<font size="-1">Last updated: Sat Jul  2 14:54:42 AEDT 2022</font>
+<font size="-1">Last updated: Sat Jul  2 15:32:39 AEDT 2022</font>
 <br>
