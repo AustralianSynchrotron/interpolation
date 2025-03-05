@@ -1,8 +1,8 @@
 #!../../bin/linux-x86_64/Dynamic_Interpolation_Test
 #
-# $File: //ASP/Dev/SBS/4_Controls/4_4_Equipment_Control/Common/sw/Interpolation/iocBoot/iocDynamic_Interpolation_Test/st.cmd $
+# $File: //ASP/opa/acc/eqc/ctl/interpolation/trunk/iocBoot/iocDynamic_Interpolation_Test/st.cmd $
 # $Revision: #1 $
-# $DateTime: 2018/02/05 20:50:27 $
+# $DateTime: 2025/02/25 13:38:50 $
 # Last checked in by: $Author: starritt $
 #
 

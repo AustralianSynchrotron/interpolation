@@ -1,3 +1,8 @@
+# $File: //ASP/opa/acc/eqc/ctl/interpolation/trunk/configure/RELEASE $
+# $Revision: #2 $
+# $DateTime: 2025/03/05 12:13:46 $
+# Last checked in by: $Author: starritt $
+#
 #RELEASE Location of external products
 # Run "gnumake clean uninstall install" in the application
 # top directory each time this file is changed.
@@ -14,12 +19,15 @@ TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 # define INSTALL_LOCATION_APP here
 #INSTALL_LOCATION_APP=<fullpathname>
 
+# Leave blank withinn source code repository.
+#
+BUNDLE=
+
 #If using the sequencer, point SNCSEQ at its top directory:
-#SNCSEQ=/epics/seq
+#SNCSEQ=$(BUNDLE)/epics/seq
 
 # EPICS_BASE usually appears last so other apps can override stuff:
-EPICS_BASE=/epics/base
+#
+EPICS_BASE=$(BUNDLE)/epics/base
 
-#Capfast users may need the following definitions
-#CAPFAST_TEMPLATES=
-#SCH2EDIF_PATH=
+# end
